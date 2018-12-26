@@ -1,15 +1,20 @@
 #include <stdio.h>
 int prime(int x);
-int main() 
+int main()
 {
 	int a, b;
 	printf("Enter any number: ");
 	scanf("%d", &a);
-	if (a == 1)
+	b = prime(a);
+	if (b == 2)
 	{
-		printf("Enter the number greater than one\n");	
+		printf("prime\n");
 	}
-	
+	else
+	{
+		printf("Not prime\n");
+	}
+
 return 0;
 }
 
