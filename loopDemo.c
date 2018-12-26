@@ -1,12 +1,14 @@
 #include <stdio.h>
-#include <math.h>
 int main()
-{	
-	int a, y = 10;
-	while (y <20)
-	{
-		a = pow(y, 2);
-		printf("%d\n", a);
-		y++;
-	}
+{
+    int i = 1, sum = 0;
+    while (i <= 10)
+    {
+        if(i%2 == 0)
+        {
+            sum = sum + i;
+        }
+        i++;
+    }
+    printf("Sum is %d\n", sum);
 }
