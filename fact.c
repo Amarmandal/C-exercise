@@ -1,26 +1,30 @@
 #include <stdio.h>
-#include<conio.h
-int fact(int i);
-
+long int fact(int n);
 int main()
 {
-    int a, result;
-    clrscr();
-    printf("Enter the number to find factorial");
+    long int result;
+    int a;
+    printf("Enter any number whose factorial to be found");
     scanf("%d", &a);
     result = fact(a);
-    printf("The required result is %d\n", result);
-    getch();
+    printf("Result is %ld\n", result);
 }
 
-int fact(int i)
+long int fact(int n)
 {
-    if (i == 1)
+    int x;
+    long int factorial = 1;
+    if (n<0)
     {
-        return 1;
+        printf("Factorial of negative nunmber doesnot exit\n");
     }
     else
     {
-        return i * fact(i-1);
+        for (x = 1; x <= n; x++)
+        {
+            factorial *= x;
+        }
+        return factorial;
     }
+
 }

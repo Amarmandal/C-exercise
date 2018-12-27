@@ -1,30 +1,23 @@
 #include <stdio.h>
-long int fact(int n);
+#include <math.h>
 int main()
 {
-    long int result;
-    int a;
-    printf("Enter any number whose factorial to be found");
-    scanf("%d", &a);
-    result = fact(a);
-    printf("Result is %ld\n", result);
-}
-
-long int fact(int n)
-{
-    int x;
-    long int factorial = 1;
-    if (n<0)
+    int n, first = 1, second = 4, next, c;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    for(c = 1; c <=n; c++)
     {
-        printf("Factorial of negative nunmber doesnot exit\n");
-    }
-    else
-    {
-        for (x = 1; x <= n; x++)
+        if (c <= 2)
         {
-            factorial *= x;
+            next = pow(c, 2);
         }
-        return factorial;
+        else
+        {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("%d ", next);
     }
-
+    printf("\n");
 }

@@ -1,33 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int i, j, rows;
-    printf("Enter the rows: ");
+    int i, space, rows, k=0;
     scanf("%d", &rows);
-    for(i=1; i<=rows; i++)
+    for (i = 1; i<=rows; i++, k=0)
     {
-        for(j=1; j<=i; j++)
+        for(space = 1; space<=rows-1; space++)
         {
-            if (i == 1)
-            {
-                printf("A ");
-            }
-            else if(i == 2)
-            {
-                printf("B ");
-            }
-            else if(i == 3)
-            {
-                printf("C ");
-            }
-            else if(i == 4)
-            {
-                printf("D ");
-            }
-            else
-            {
-                printf("E ");
-            }
+            printf(" ");
+        }
+        while(k != 2*i-1)
+        {
+            printf("* ");
+            k++;
         }
         printf("\n");
     }
