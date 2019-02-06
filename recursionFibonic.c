@@ -4,16 +4,15 @@
 
     int main()
     {
-       int n, i = 0, c;
+       int n, c = 0;
 
        scanf("%d",&n);
 
        printf("Fibonacci series\n");
 
-       for ( c = 1 ; c <= n ; c++ )
+       for ( c = 0 ; c < n ; c++ )
        {
-          printf("%d\n", Fibonacci(i));
-          i++;
+          printf("%d\n", Fibonacci(c));
        }
 
        return 0;

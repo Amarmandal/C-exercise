@@ -1,15 +1,10 @@
-#include <stdio.h>
-int some(int m, int n)
-{
-    m = 100;
-    n = 200;
-}
+    #include <stdio.h>
+    int main()
+    {
+        char array[100];
 
-int main()
-{
-    int a, b;
-    a = 10;
-    b = 20;
-    some(a, b);
-    printf("%d %d\n", a, b);
-}
+        printf("Enter a string\n");
+        gets(array);
+        printf(array);
+        return 0;
+    }

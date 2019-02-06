@@ -6,7 +6,7 @@ int main()
     printf("Enter rows and column: ");
     scanf("%d %d", &m, &n);
     //Value for A
-    printf("A: \n");
+    printf("A: \n");+
     for (i = 0; i < m; i++)
     {
         for (j = 0; j < n; j++)

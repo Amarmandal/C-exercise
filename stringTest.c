@@ -1,11 +1,14 @@
 #include <stdio.h>
+
+double getAverage(int arr[], int size);
+
 int main()
 {
-    int c;
-    printf("Enter the values:\n");
-    c = getchar();
-    printf("You entered: ");
-    putchar(c);
-    printf("\n");
-    return 0;
+    int balance[3] = {1,22,33};
+    getAverage(balance, 3);
+}
+
+double getAverage(int arr[], int size)
+{
+
 }
