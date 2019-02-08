@@ -27,7 +27,7 @@ void main()
     {
         for(j=i+1; j<n; j++)
         {
-            if(strcmp(read_arr[i], read_arr[j])>0)//comparing string
+            if(strcmp(read_arr[i], read_arr[j])<0)//comparing string
                 {
                      strcpy(temp, read_arr[i]);
                      strcpy(read_arr[i], read_arr[j]);
